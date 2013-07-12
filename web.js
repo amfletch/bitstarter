@@ -5,7 +5,6 @@ var app = express.createServer(express.logger());
 
 buf = fs.readFileSync('index.html');
 var welcome = buf.toString();
-console.log(welcome);
 
 app.get('/', function(request, response) {
   response.send(welcome);
