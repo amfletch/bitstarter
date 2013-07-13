@@ -96,10 +96,10 @@ if(require.main == module) {
 		.parse(process.argv);
 	
 	if(program.url) {
-		console.log("Using url: " + program.url);
+		//console.log("Using url: " + program.url);
 		var checkJson = getUrl(program.url,program.checks,checkHtmlFile);
 	} else {
-		console.log("Using file: " + program.file);
+		//console.log("Using file: " + program.file);
 		var checkJson = getFile(program.file,program.checks,checkHtmlFile);
 	}
 } else {
